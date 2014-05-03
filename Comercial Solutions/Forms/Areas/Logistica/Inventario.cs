@@ -12,19 +12,18 @@ using i3nRiqJSON;
 
 namespace Comercial_Solutions.Forms.Areas.Logistica
 {
-    public partial class beta3 : Form
+    public partial class Inventario : Form
     {
         int X = 0;
         int Y = 0;
-        public beta3()
+        public Inventario()
         {
             X = Propp.X;
             Y = Propp.Y;
-
             InitializeComponent();
         }
 
-        private void beta3_Load(object sender, EventArgs e)
+        private void Inventario_Load(object sender, EventArgs e)
         {
             this.Size = new Size(X, Y);
             this.Location = new Point(250, 56);

@@ -57,7 +57,9 @@ namespace Comercial_Solutions.Forms.Seguridad
             comboBox1.DisplayMember = "txmodulos";
             comboBox1.ValueMember = "cod_modulos";
             }
-            catch (Exception e) { }
+            catch (Exception e) {
+                MessageBox.Show("Error "+e);
+            }
         }
 //*************************************************************************************************************
 
