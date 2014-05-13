@@ -58,11 +58,11 @@
     <Compile Include="Forms\Areas\Logistica\beta3.designer.cs">
       <DependentUpon>beta3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Areas\Logistica\Inventario.cs">
+    <Compile Include="Forms\Areas\Logistica\frm_Inventario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Areas\Logistica\Inventario.Designer.cs">
-      <DependentUpon>Inventario.cs</DependentUpon>
+    <Compile Include="Forms\Areas\Logistica\frm_Inventario.Designer.cs">
+      <DependentUpon>frm_Inventario.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Principal\frm_login.cs">
       <SubType>Form</SubType>
@@ -111,8 +111,8 @@
     <EmbeddedResource Include="Forms\Areas\Logistica\beta3.resx">
       <DependentUpon>beta3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Areas\Logistica\Inventario.resx">
-      <DependentUpon>Inventario.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Areas\Logistica\frm_Inventario.resx">
+      <DependentUpon>frm_Inventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal\frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
