@@ -62,3 +62,5 @@ C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\D
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\bin\Debug\Comercial Solutions.exe.config
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\bin\Debug\Comercial Solutions.exe
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\bin\Debug\Comercial Solutions.pdb
+C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial Solutions.csprojResolveAssemblyReference.cache
+C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial_Solutions.Forms.Areas.Logistica.frm_produccion.resources
