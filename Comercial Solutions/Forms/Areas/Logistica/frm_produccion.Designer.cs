@@ -35,17 +35,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_produccion = new System.Windows.Forms.Label();
             this.gpb_datos = new System.Windows.Forms.GroupBox();
+            this.txt_precio = new System.Windows.Forms.TextBox();
+            this.lbl_precio_costo = new System.Windows.Forms.Label();
+            this.txt_medida = new System.Windows.Forms.TextBox();
+            this.lbl_medida = new System.Windows.Forms.Label();
+            this.txt_cantidad = new System.Windows.Forms.TextBox();
+            this.lbl_cantidad = new System.Windows.Forms.Label();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.lbl_nombre = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgv_consulta_produccion = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
-            this.txt_cantidad = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_medida = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_precio = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btn_agregar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,12 +54,13 @@
             this.gpb_datos.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_consulta_produccion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_agregar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Comercial_Solutions.Properties.Resources.search;
-            this.pictureBox4.Location = new System.Drawing.Point(205, 72);
+            this.pictureBox4.Location = new System.Drawing.Point(261, 75);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.TabIndex = 25;
@@ -67,7 +69,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Comercial_Solutions.Properties.Resources.refresh;
-            this.pictureBox3.Location = new System.Drawing.Point(149, 72);
+            this.pictureBox3.Location = new System.Drawing.Point(205, 75);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.TabIndex = 24;
@@ -76,7 +78,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Comercial_Solutions.Properties.Resources.delete;
-            this.pictureBox2.Location = new System.Drawing.Point(93, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(149, 75);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.TabIndex = 23;
@@ -84,8 +86,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Comercial_Solutions.Properties.Resources.check;
-            this.pictureBox1.Location = new System.Drawing.Point(37, 72);
+            this.pictureBox1.Image = global::Comercial_Solutions.Properties.Resources.save;
+            this.pictureBox1.Location = new System.Drawing.Point(93, 75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 22;
@@ -105,26 +107,91 @@
             // gpb_datos
             // 
             this.gpb_datos.Controls.Add(this.txt_precio);
-            this.gpb_datos.Controls.Add(this.label4);
+            this.gpb_datos.Controls.Add(this.lbl_precio_costo);
             this.gpb_datos.Controls.Add(this.txt_medida);
-            this.gpb_datos.Controls.Add(this.label3);
+            this.gpb_datos.Controls.Add(this.lbl_medida);
             this.gpb_datos.Controls.Add(this.txt_cantidad);
-            this.gpb_datos.Controls.Add(this.label2);
+            this.gpb_datos.Controls.Add(this.lbl_cantidad);
             this.gpb_datos.Controls.Add(this.txt_nombre);
-            this.gpb_datos.Controls.Add(this.label1);
+            this.gpb_datos.Controls.Add(this.lbl_nombre);
             this.gpb_datos.Location = new System.Drawing.Point(37, 169);
             this.gpb_datos.Name = "gpb_datos";
-            this.gpb_datos.Size = new System.Drawing.Size(218, 203);
+            this.gpb_datos.Size = new System.Drawing.Size(218, 285);
             this.gpb_datos.TabIndex = 26;
             this.gpb_datos.TabStop = false;
             this.gpb_datos.Text = "Insercion";
+            this.gpb_datos.Visible = false;
+            // 
+            // txt_precio
+            // 
+            this.txt_precio.Location = new System.Drawing.Point(97, 184);
+            this.txt_precio.Name = "txt_precio";
+            this.txt_precio.Size = new System.Drawing.Size(100, 20);
+            this.txt_precio.TabIndex = 7;
+            // 
+            // lbl_precio_costo
+            // 
+            this.lbl_precio_costo.AutoSize = true;
+            this.lbl_precio_costo.Location = new System.Drawing.Point(9, 191);
+            this.lbl_precio_costo.Name = "lbl_precio_costo";
+            this.lbl_precio_costo.Size = new System.Drawing.Size(66, 13);
+            this.lbl_precio_costo.TabIndex = 6;
+            this.lbl_precio_costo.Text = "Precio costo";
+            // 
+            // txt_medida
+            // 
+            this.txt_medida.Location = new System.Drawing.Point(97, 145);
+            this.txt_medida.Name = "txt_medida";
+            this.txt_medida.Size = new System.Drawing.Size(100, 20);
+            this.txt_medida.TabIndex = 5;
+            // 
+            // lbl_medida
+            // 
+            this.lbl_medida.AutoSize = true;
+            this.lbl_medida.Location = new System.Drawing.Point(9, 152);
+            this.lbl_medida.Name = "lbl_medida";
+            this.lbl_medida.Size = new System.Drawing.Size(42, 13);
+            this.lbl_medida.TabIndex = 4;
+            this.lbl_medida.Text = "Medida";
+            // 
+            // txt_cantidad
+            // 
+            this.txt_cantidad.Location = new System.Drawing.Point(97, 108);
+            this.txt_cantidad.Name = "txt_cantidad";
+            this.txt_cantidad.Size = new System.Drawing.Size(100, 20);
+            this.txt_cantidad.TabIndex = 3;
+            // 
+            // lbl_cantidad
+            // 
+            this.lbl_cantidad.AutoSize = true;
+            this.lbl_cantidad.Location = new System.Drawing.Point(9, 115);
+            this.lbl_cantidad.Name = "lbl_cantidad";
+            this.lbl_cantidad.Size = new System.Drawing.Size(52, 13);
+            this.lbl_cantidad.TabIndex = 2;
+            this.lbl_cantidad.Text = "Cantidad ";
+            // 
+            // txt_nombre
+            // 
+            this.txt_nombre.Location = new System.Drawing.Point(97, 72);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(100, 20);
+            this.txt_nombre.TabIndex = 1;
+            // 
+            // lbl_nombre
+            // 
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.Location = new System.Drawing.Point(9, 79);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(44, 13);
+            this.lbl_nombre.TabIndex = 0;
+            this.lbl_nombre.Text = "Nombre";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgv_consulta_produccion);
-            this.groupBox2.Location = new System.Drawing.Point(291, 87);
+            this.groupBox2.Location = new System.Drawing.Point(290, 169);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(357, 285);
+            this.groupBox2.Size = new System.Drawing.Size(466, 285);
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Consulta";
@@ -142,80 +209,27 @@
             this.dgv_consulta_produccion.Size = new System.Drawing.Size(321, 238);
             this.dgv_consulta_produccion.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
-            // 
-            // txt_nombre
-            // 
-            this.txt_nombre.Location = new System.Drawing.Point(106, 50);
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(100, 20);
-            this.txt_nombre.TabIndex = 1;
-            // 
-            // txt_cantidad
-            // 
-            this.txt_cantidad.Location = new System.Drawing.Point(106, 86);
-            this.txt_cantidad.Name = "txt_cantidad";
-            this.txt_cantidad.Size = new System.Drawing.Size(100, 20);
-            this.txt_cantidad.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Cantidad ";
-            // 
-            // txt_medida
-            // 
-            this.txt_medida.Location = new System.Drawing.Point(106, 123);
-            this.txt_medida.Name = "txt_medida";
-            this.txt_medida.Size = new System.Drawing.Size(100, 20);
-            this.txt_medida.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 126);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Medida";
-            // 
-            // txt_precio
-            // 
-            this.txt_precio.Location = new System.Drawing.Point(106, 162);
-            this.txt_precio.Name = "txt_precio";
-            this.txt_precio.Size = new System.Drawing.Size(100, 20);
-            this.txt_precio.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 165);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Precio costo";
-            // 
             // timer1
             // 
             this.timer1.Interval = 40000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // btn_agregar
+            // 
+            this.btn_agregar.Image = global::Comercial_Solutions.Properties.Resources.add;
+            this.btn_agregar.Location = new System.Drawing.Point(37, 75);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(50, 50);
+            this.btn_agregar.TabIndex = 28;
+            this.btn_agregar.TabStop = false;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
+            // 
             // frm_produccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 424);
+            this.ClientSize = new System.Drawing.Size(804, 537);
+            this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gpb_datos);
             this.Controls.Add(this.pictureBox4);
@@ -234,6 +248,7 @@
             this.gpb_datos.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_consulta_produccion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_agregar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,15 +263,16 @@
         private System.Windows.Forms.Label lbl_produccion;
         private System.Windows.Forms.GroupBox gpb_datos;
         private System.Windows.Forms.TextBox txt_precio;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_precio_costo;
         private System.Windows.Forms.TextBox txt_medida;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_medida;
         private System.Windows.Forms.TextBox txt_cantidad;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_cantidad;
         private System.Windows.Forms.TextBox txt_nombre;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_nombre;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dgv_consulta_produccion;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox btn_agregar;
     }
 }

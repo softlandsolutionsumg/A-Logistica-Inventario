@@ -46,6 +46,7 @@ namespace Comercial_Solutions.Forms.Areas.Logistica
         }
         public void inserta()
         {
+            
             string tabla = "tbm_producto_finalizado";
             Dictionary<string, string> dict = new Dictionary<string, string>();
             dict.Add("cantidad_producto_finalizado", txt_cantidad.Text);
@@ -53,16 +54,29 @@ namespace Comercial_Solutions.Forms.Areas.Logistica
             dict.Add("medida_producto", txt_medida.Text);
             dict.Add("tx_nombre", txt_nombre.Text);
             x.insertar("1", tabla, dict);
+            MessageBox.Show("Trae " + i3nRiqJson.RespuestaConexion.ToString());
+            txt_cantidad.Text="";
+            txt_medida.Text= "";
+            txt_nombre.Text= "";
+            txt_precio.Text= "";
+           
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             inserta();
+            cargar();
+
         }
        
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             cargar();
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            gpb_datos.Visible = true;
         }
     }
 }
