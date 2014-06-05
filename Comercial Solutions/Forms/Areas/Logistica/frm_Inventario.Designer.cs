@@ -34,7 +34,6 @@
             this.btn_eliminar = new System.Windows.Forms.PictureBox();
             this.btn_actualizar = new System.Windows.Forms.PictureBox();
             this.btn_bloquear = new System.Windows.Forms.PictureBox();
-            this.dgv_alertas = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.tab_inventarios = new System.Windows.Forms.TabPage();
             this.gpb_inventarios = new System.Windows.Forms.GroupBox();
@@ -61,11 +60,11 @@
             this.lbl_precio_costo = new System.Windows.Forms.Label();
             this.lbl_medida = new System.Windows.Forms.Label();
             this.lbl_cantidad = new System.Windows.Forms.Label();
+            this.dgv_alertas = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.btn_insertar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_actualizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_bloquear)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_alertas)).BeginInit();
             this.tab_inventarios.SuspendLayout();
             this.gpb_inventarios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vista_consulta)).BeginInit();
@@ -74,6 +73,7 @@
             this.tab_consulta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cargar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_alertas)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
@@ -125,17 +125,6 @@
             this.btn_bloquear.TabStop = false;
             this.btn_bloquear.Click += new System.EventHandler(this.btn_bloquear_Click);
             // 
-            // dgv_alertas
-            // 
-            this.dgv_alertas.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgv_alertas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_alertas.Location = new System.Drawing.Point(390, 35);
-            this.dgv_alertas.Name = "dgv_alertas";
-            this.dgv_alertas.RowHeadersVisible = false;
-            this.dgv_alertas.Size = new System.Drawing.Size(370, 120);
-            this.dgv_alertas.TabIndex = 21;
-            this.dgv_alertas.Click += new System.EventHandler(this.dgv_alertas_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -144,6 +133,7 @@
             this.label3.Size = new System.Drawing.Size(167, 13);
             this.label3.TabIndex = 22;
             this.label3.Text = "Alerta de existencia de productos.";
+            this.label3.Visible = false;
             // 
             // tab_inventarios
             // 
@@ -387,6 +377,18 @@
             this.lbl_cantidad.TabIndex = 18;
             this.lbl_cantidad.Text = " ";
             // 
+            // dgv_alertas
+            // 
+            this.dgv_alertas.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv_alertas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_alertas.Location = new System.Drawing.Point(390, 35);
+            this.dgv_alertas.Name = "dgv_alertas";
+            this.dgv_alertas.RowHeadersVisible = false;
+            this.dgv_alertas.Size = new System.Drawing.Size(370, 120);
+            this.dgv_alertas.TabIndex = 21;
+            this.dgv_alertas.Visible = false;
+            this.dgv_alertas.Click += new System.EventHandler(this.dgv_alertas_Click);
+            // 
             // frm_inventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -410,7 +412,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_eliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_actualizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_bloquear)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_alertas)).EndInit();
             this.tab_inventarios.ResumeLayout(false);
             this.gpb_inventarios.ResumeLayout(false);
             this.gpb_inventarios.PerformLayout();
@@ -421,6 +422,7 @@
             this.tab_consulta.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_cargar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_alertas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -433,7 +435,6 @@
         private System.Windows.Forms.PictureBox btn_eliminar;
         private System.Windows.Forms.PictureBox btn_actualizar;
         private System.Windows.Forms.PictureBox btn_bloquear;
-        private System.Windows.Forms.DataGridView dgv_alertas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabPage tab_inventarios;
         private System.Windows.Forms.DataGridView dgv_vista_consulta;
@@ -460,6 +461,7 @@
         private System.Windows.Forms.Label lbl_medida;
         private System.Windows.Forms.Label lbl_precio_costo;
         private System.Windows.Forms.Label lbl_cantidad;
+        private System.Windows.Forms.DataGridView dgv_alertas;
 
     }
 }

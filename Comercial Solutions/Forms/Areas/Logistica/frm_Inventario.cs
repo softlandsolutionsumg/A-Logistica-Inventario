@@ -149,10 +149,10 @@ namespace Comercial_Solutions.Forms.Areas.Logistica
                 sumarinventario();
                 //actualizo mi inventairo                
                 string insercionproductos = "tbt_inventario";
-                string condicion = "id_producto = '" + cmb_insertar_nombre_producto.SelectedValue.ToString() + "'";
+                string condicion = "tbm_almacen_idtbm_bodega = '" + cmb_almacen + "'";
                 Dictionary<string, string> dict = new Dictionary<string, string>();
                 dict.Add("cantidad", cantidadproductoaactualizar.ToString());
-                dict.Add("tbm_almacen_idtbm_bodega", cmb_bodega.SelectedValue.ToString());
+                //dict.Add("tbm_almacen_idtbm_bodega", cmb_bodega.SelectedValue.ToString());
                 dict.Add("tbm_producto_finalizado_idtbm_producto_finalizado", cmb_insertar_nombre_producto.SelectedValue.ToString());
                 x.actualizar("3", insercionproductos, dict, condicion);
                 
@@ -266,7 +266,7 @@ namespace Comercial_Solutions.Forms.Areas.Logistica
         {
             insertar();
             llenarconsultainventarios();
-            XX();
+           // XX();
 
         }
 
@@ -324,7 +324,7 @@ namespace Comercial_Solutions.Forms.Areas.Logistica
         {
             llenarconsultainventarios();
             //llenarconsultaproductos();
-            llenarconsultaalertas();
+            //llenarconsultaalertas();
             //XX();
         }
 
