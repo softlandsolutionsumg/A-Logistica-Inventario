@@ -47,6 +47,7 @@ C:\Users\3nR\Documents\GitHub\CSolutions\Comercial Solutions\bin\Debug\Comercial
 C:\Users\3nR\Documents\GitHub\CSolutions\Comercial Solutions\obj\Debug\Comercial Solutions.csprojResolveAssemblyReference.cache
 C:\Users\3nR\Documents\GitHub\CSolutions\Comercial Solutions\obj\Debug\Comercial_Solutions.Forms.Seguridad.frm_Menu_aplicacion.resources
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial Solutions.exe
+C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial Solutions.csprojResolveAssemblyReference.cache
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial_Solutions.Forms.Areas.Logistica.beta3.resources
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial_Solutions.Forms.Areas.Logistica.frm_inventario.resources
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial_Solutions.Forms.Principal.frm_login.resources
@@ -62,5 +63,4 @@ C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\D
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\bin\Debug\Comercial Solutions.exe.config
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\bin\Debug\Comercial Solutions.exe
 C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\bin\Debug\Comercial Solutions.pdb
-C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial Solutions.csprojResolveAssemblyReference.cache
-C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial_Solutions.Forms.Areas.Logistica.frm_produccion.resources
+C:\Users\Edgar\Documents\GitHub\A-Logistica-Inventario\Comercial Solutions\obj\Debug\Comercial_Solutions.Forms.Areas.Logistica.frm_productos_finalizados.resources
